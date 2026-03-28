@@ -16,12 +16,9 @@ import com.task_tracker.mappers.TaskMapper;
 @Component
 public class TaskListMapperImpl implements TaskListMapper {
 	
-	private final TaskMapper taskMapper;
+	@Autowired
+	private TaskMapper taskMapper;
 	
-	public TaskListMapperImpl(TaskMapper taskMapper) {
-		this.taskMapper = taskMapper;
-	}
-
 	@Override
 	public TaskList fromDto(TaskListDto taskListDto) {
 		return new TaskList(

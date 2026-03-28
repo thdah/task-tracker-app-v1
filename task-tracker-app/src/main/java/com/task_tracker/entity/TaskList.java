@@ -14,11 +14,13 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "tbl_task_lists")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class TaskList {
 
 	@Id
